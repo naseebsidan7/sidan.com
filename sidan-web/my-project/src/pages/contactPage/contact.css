@@ -1,0 +1,197 @@
+.contact_gridContainer{
+    display: grid;
+    height: auto;
+    width: 100%;
+    grid-template-columns: repeat(3,300px);
+    grid-template-rows: repeat(3,200px);
+    gap: 35px;
+    place-content: center;
+    
+}
+
+ 
+.instaGrid,.gitHubGrid,.linkedinGrid,.gmailGrid,.twitterGrid,.cxGrid{
+ 
+
+    text-align: center;
+    cursor: pointer;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.instaGrid{
+    grid-row: 1/3;
+    background:  linear-gradient(180deg, rgba(255,193,7,0.85) 0%, rgba(244,67,54,0.85) 50%, rgba(156,39,176,0.85) 100%);;
+}
+
+.gitHubGrid{
+    grid-row: 3/4;
+    background-color: #030408;
+  
+    
+}
+.gmailGrid{
+    grid-row: 2/4;
+    background-color: white;
+}
+
+.linkedinGrid{
+    grid-row: 1/2;
+    background: linear-gradient(180deg, rgba(34,129,238,0.87) 0%, rgba(106,169,241,0.87) 100%);
+}
+
+.twitterGrid{
+    grid-row: 1/2;
+    background-color: black;
+}
+
+.cxGrid{
+    grid-row: 2/4;
+    position: relative; 
+    
+    background-image: url(./src/assets/contact/cx.svg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+ 
+.cxGrid .blue-lg {
+    position: absolute; /* Positioned relative to cxGrid */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #04010b26; /* Semi-transparent blue */
+    pointer-events: none; /* Ensure it doesn’t block interactions with underlying content */
+    z-index: 1; /* Place it above the background image */
+    border-radius: 25px;
+}
+
+
+@media (max-width: 1075px){
+    .contact_gridContainer{
+        grid-template-columns: repeat(3,270px);
+        grid-template-rows: repeat(3,170px);
+        gap: 30px;
+
+    }
+    
+}
+
+
+
+@media (max-width: 938px){
+    .contact_gridContainer{
+        grid-template-columns: repeat(3,250px);
+        grid-template-rows: repeat(3,160px);
+        gap: 26px;
+
+    }
+    
+}
+
+
+@media (max-width: 872px){
+    .contact_gridContainer{
+        grid-template-columns: repeat(3,230px);
+        grid-template-rows: repeat(3,160px);
+        gap: 20px;
+
+    }
+    
+}
+
+@media (max-width: 762px){
+    .contact_gridContainer{
+        grid-template-columns: repeat(3,200px);
+        grid-template-rows: repeat(3,150px);
+        gap: 20px;
+
+    }
+    
+}
+
+@media (max-width: 685px){
+    .contact_gridContainer{
+        grid-template-columns: repeat(2,200px);
+        grid-template-rows: repeat(6,150px);
+        gap: 20px;
+
+    }
+
+    .instaGrid{
+        grid-row: 1/3;
+        background:  linear-gradient(180deg, rgba(255,193,7,0.85) 0%, rgba(244,67,54,0.85) 50%, rgba(156,39,176,0.85) 100%);;
+    }
+    
+    .gitHubGrid{
+        background-color: black;
+        grid-row: 3/4;
+    }
+    .gmailGrid{
+        grid-row: 2/4;
+        background-color: white;
+    }
+    
+    .linkedinGrid{
+        grid-row: 1/2;
+        background: linear-gradient(180deg, rgba(34,129,238,0.87) 0%, rgba(106,169,241,0.87) 100%);
+    }
+    
+    .twitterGrid{
+        grid-row: 5/6;
+        grid-column: 1/3;
+        background-color: #030408;
+    }
+    
+    .cxGrid{
+        grid-column: 1/3;
+        grid-row: 4/5;
+    }
+    
+     
+}
+
+
+@media (max-width: 456px){
+   
+    .contact_gridContainer{
+        grid-template-columns: 100%;
+        padding: 0 2rem;
+        grid-template-rows: repeat(6,250px);
+        gap: 25px;
+    }
+
+    .instaGrid{
+        grid-row: 1;
+        background:  linear-gradient(180deg, rgba(255,193,7,0.85) 0%, rgba(244,67,54,0.85) 50%, rgba(156,39,176,0.85) 100%);;
+    }
+    
+    .gitHubGrid{
+        background-color: black;
+        grid-row: 2;
+    }
+    .gmailGrid{
+        grid-row: 3;
+        background-color: white;
+    }
+    
+    .linkedinGrid{
+        grid-row: 4;
+        background: linear-gradient(180deg, rgba(34,129,238,0.87) 0%, rgba(106,169,241,0.87) 100%);
+    }
+    
+    .twitterGrid{
+        grid-row: 5;
+        grid-column: 1;
+        background-color: #030408;
+    }
+    
+    .cxGrid{
+        grid-row: 6;
+        grid-column: 1;
+    }
+    
+}
